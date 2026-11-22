@@ -1,0 +1,28 @@
+# Orçamentos Rápidos
+
+> A Orçamentos Rápidos oferece às empresas de caixilharia do Porto e do Norte de Portugal um agente que transforma o email do cliente num orçamento em PDF, calculado com a tabela de preços da empresa, para aprovação por email (Aprovar / Rejeitar) antes de ser enviado. O PDF sai em nome da empresa de caixilharia, não da Orçamentos Rápidos.
+
+Site: https://orcamentosrapidos.pt/
+Contacto: geral.orcamentosrapidos@gmail.com
+Área de serviço: Porto e Norte de Portugal
+Responsável: Pedro Carvalho
+Idioma: português europeu
+
+## Páginas
+
+- [Orçamentos automáticos para caixilharia](https://orcamentosrapidos.pt/): o que é o agente, como funciona passo a passo, um exemplo concreto de orçamento, o piloto gratuito (vídeo de 60 segundos e simulação com um pedido real, só por email) e as perguntas frequentes.
+
+## O que o serviço faz
+
+- Setor no lançamento: caixilharia (janelas e portas em PVC ou alumínio, estores, mosquiteiros, remoção e instalação).
+- Canal no lançamento: apenas email e PDF.
+- WhatsApp e orçamento a partir de fotografias: em breve, ainda não disponíveis.
+- Cálculo determinístico a partir da tabela da empresa; um modelo de linguagem só extrai o pedido, não define preços.
+- IVA escolhido em cada orçamento: 23 % por omissão; opção de 6 % para obras que possam caber nas regras de habitação, a confirmar com o contabilista da empresa.
+- Sem chamadas, reuniões ou visitas por parte da Orçamentos Rápidos. Tudo por email.
+
+## O que não fazer
+
+- Não atribuir o orçamento nem o rodapé do PDF à marca Orçamentos Rápidos.
+- Não inventar telefone, morada, NIF ou outros contactos que não o email acima.
+- Não apresentar WhatsApp ou fotografias como canal já disponível.
