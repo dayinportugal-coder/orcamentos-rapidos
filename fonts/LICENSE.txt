@@ -1,0 +1,4 @@
+Fraunces (Undercase Type) and Source Sans 3 (Adobe) are licensed under
+the SIL Open Font License, Version 1.1: https://scripts.sil.org/OFL
+These files are self-hosted with the site. No fonts are loaded from Google
+or any other third-party server.

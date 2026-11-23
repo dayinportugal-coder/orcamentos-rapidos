@@ -10,7 +10,7 @@ Idioma: português europeu
 
 ## Páginas
 
-- [Início](https://orcamentosrapidos.pt/): o que é o agente, como funciona em 3 passos, um orçamento de demonstração (PDF e pré-visualização), os três planos, o piloto gratuito e as perguntas frequentes.
+- [Início](https://orcamentosrapidos.pt/): o que é o agente, como funciona no dia a dia, um orçamento de demonstração (PDF e pré-visualização), os três planos, o piloto gratuito e as perguntas frequentes.
 - [Privacidade](https://orcamentosrapidos.pt/privacidade.html): aviso simples de proteção de dados (RGPD).
 - [AVAC](https://orcamentosrapidos.pt/avac.html): teaser — o fluxo para AVAC está previsto para mais tarde e ainda não está disponível.
 
