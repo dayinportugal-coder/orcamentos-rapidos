@@ -1,6 +1,6 @@
 # Orçamentos Rápidos
 
-> A Orçamentos Rápidos oferece às caixilharias do Porto e do Norte de Portugal um agente que transforma o pedido do cliente (por email ou formulário) num orçamento em PDF, calculado com a tabela de preços da empresa, para a empresa rever e enviar. O PDF sai em nome da empresa de caixilharia, não da Orçamentos Rápidos. Há três planos mensais, de 300 a 800 €/mês (sem IVA; acresce IVA à taxa legal). A instalação é remota e tudo se trata por email.
+> A Orçamentos Rápidos oferece às caixilharias do Porto e do Norte de Portugal um agente que calcula um orçamento de caixilharia no próprio site (e a partir de email ou formulário), com a tabela de preços da empresa, e devolve um PDF para a empresa rever e enviar. No site há um simulador com preços de exemplo; com a tabela da empresa, o PDF sai com os preços e o logótipo dela. Há um piloto gratuito de 2 semanas e três planos mensais, de 49 a 199 €/mês (sem IVA; acresce IVA à taxa legal). A instalação é remota e o cálculo no site não precisa de servidor.
 
 Site: https://orcamentosrapidos.pt/
 Contacto: geral.orcamentosrapidos@gmail.com
@@ -10,7 +10,7 @@ Idioma: português europeu
 
 ## Páginas
 
-- [Início](https://orcamentosrapidos.pt/): o que é o agente, como funciona no dia a dia, um orçamento de demonstração (PDF e pré-visualização), os três planos, o piloto gratuito e as perguntas frequentes.
+- [Início](https://orcamentosrapidos.pt/): simulador de orçamento no topo (cálculo no browser, com preços de exemplo), como funciona no dia a dia, um orçamento de demonstração, os planos, o piloto e as perguntas frequentes.
 - [Privacidade](https://orcamentosrapidos.pt/privacidade.html): aviso simples de proteção de dados (RGPD).
 - [AVAC](https://orcamentosrapidos.pt/avac.html): teaser — o fluxo para AVAC está previsto para mais tarde e ainda não está disponível.
 
@@ -22,16 +22,18 @@ Idioma: português europeu
 
 ## Planos (mensais, sem IVA; acresce IVA à taxa legal)
 
-- Essencial: 300 €/mês — uma tabela de preços e pedidos por email.
-- Profissional: 500 €/mês — várias tabelas (PVC, alumínio, estores); pedidos por email ou formulário.
-- Completo: 800 €/mês — regras mais completas (fornecimento e instalação, opções de IVA) para quem tem mais pedidos no dia a dia.
+- Piloto: gratuito durante 2 semanas, sem obrigação de contratar.
+- Essencial: 49 €/mês — uma tabela de preços e pedidos por email.
+- Profissional: 99 €/mês — várias tabelas (PVC, alumínio, estores); pedidos por email ou formulário.
+- Completo: 199 €/mês — regras mais completas (fornecimento e instalação, opções de IVA) para quem tem mais pedidos no dia a dia.
 
-O plano certo confirma-se por email, depois de se ver a tabela da empresa. Há um piloto gratuito, sem obrigação de contratar.
+O plano certo confirma-se por email, depois de se ver a tabela da empresa.
 
 ## O que o serviço faz
 
 - Setor no lançamento: caixilharia (janelas e portas em PVC ou alumínio, estores, mosquiteiros, remoção e instalação).
-- Canal no lançamento: email, formulário e PDF.
+- Canal no lançamento: simulador no site (cálculo no browser, sem servidor), email, formulário e PDF.
+- O simulador do site usa um catálogo de preços de exemplo. Com a tabela da empresa, o orçamento passa a usar esses preços e o logótipo dela.
 - WhatsApp, orçamento a partir de fotografias, e AVAC: em breve, ainda não disponíveis.
 - Cálculo a partir da tabela da empresa (Excel ou CSV, ou outro ficheiro estruturado a confirmar por email). Um modelo de linguagem só extrai o pedido, não define preços.
 - IVA no orçamento da caixilharia: valores sem IVA e com IVA; 23 % por omissão; opção de 6 % para obras que possam caber nas regras de habitação, a confirmar com o contabilista da empresa.
