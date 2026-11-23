@@ -1,6 +1,6 @@
 # Orçamentos Rápidos
 
-> A Orçamentos Rápidos oferece às caixilharias do Porto e do Norte de Portugal um agente que calcula um orçamento de caixilharia no próprio site (e a partir de email ou formulário), com a tabela de preços da empresa, e devolve um PDF para a empresa rever e enviar. No site há um simulador com preços de exemplo; com a tabela da empresa, o PDF sai com os preços e o logótipo dela. Há um piloto gratuito de 2 semanas e três planos mensais, de 49 a 199 €/mês (sem IVA; acresce IVA à taxa legal). A instalação é remota e o cálculo no site não precisa de servidor.
+> A Orçamentos Rápidos oferece às caixilharias do Porto e do Norte de Portugal um agente que calcula um orçamento de caixilharia no próprio site (e a partir de email ou formulário), com a tabela de preços da empresa, e devolve um PDF para a empresa rever e enviar. No site há um simulador com preços de exemplo; com a tabela da empresa, o PDF sai com os preços e o logótipo dela. Há um mês grátis para começar (durante o piloto pedimos o que melhorariam: cada sugestão útil = +1 dia grátis) e três planos mensais, de 49 a 199 €/mês (sem IVA; acresce IVA à taxa legal). A instalação é remota e o cálculo no site não precisa de servidor.
 
 Site: https://orcamentosrapidos.pt/
 Contacto: geral.orcamentosrapidos@gmail.com
@@ -22,7 +22,7 @@ Idioma: português europeu
 
 ## Planos (mensais, sem IVA; acresce IVA à taxa legal)
 
-- Piloto: gratuito durante 2 semanas, sem obrigação de contratar.
+- Piloto: 1 mês grátis, sem obrigação de contratar. Durante o mês pedimos o que melhorariam: cada sugestão útil = +1 dia grátis.
 - Essencial: 49 €/mês — uma tabela de preços e pedidos por email.
 - Profissional: 99 €/mês — várias tabelas (PVC, alumínio, estores); pedidos por email ou formulário.
 - Completo: 199 €/mês — regras mais completas (fornecimento e instalação, opções de IVA) para quem tem mais pedidos no dia a dia.
