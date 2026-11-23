@@ -1,6 +1,6 @@
 # Orçamentos Rápidos
 
-> A Orçamentos Rápidos oferece às caixilharias do Porto e do Norte de Portugal um agente que transforma o email do cliente num orçamento em PDF, calculado com a tabela de preços da empresa, para a empresa rever e enviar. O PDF sai em nome da empresa de caixilharia, não da Orçamentos Rápidos. O serviço custa a partir de 300 €/mês (sem IVA; acresce IVA à taxa legal), com piloto gratuito.
+> A Orçamentos Rápidos oferece às caixilharias do Porto e do Norte de Portugal um agente que transforma o pedido do cliente (por email ou formulário) num orçamento em PDF, calculado com a tabela de preços da empresa, para a empresa rever e enviar. O PDF sai em nome da empresa de caixilharia, não da Orçamentos Rápidos. Há três planos mensais, de 300 a 800 €/mês (sem IVA; acresce IVA à taxa legal). A instalação é remota e tudo se trata por email.
 
 Site: https://orcamentosrapidos.pt/
 Contacto: geral.orcamentosrapidos@gmail.com
@@ -10,25 +10,33 @@ Idioma: português europeu
 
 ## Páginas
 
-- [Início](https://orcamentosrapidos.pt/): o que é o agente, como funciona em 3 passos, um orçamento de exemplo (PDF e pré-visualização), o preço a partir de 300 €/mês, o piloto gratuito e as perguntas frequentes.
+- [Início](https://orcamentosrapidos.pt/): o que é o agente, como funciona em 3 passos, um orçamento de demonstração (PDF e pré-visualização), os três planos, o piloto gratuito e as perguntas frequentes.
 - [Privacidade](https://orcamentosrapidos.pt/privacidade.html): aviso simples de proteção de dados (RGPD).
 - [AVAC](https://orcamentosrapidos.pt/avac.html): teaser — o fluxo para AVAC está previsto para mais tarde e ainda não está disponível.
 
 ## Como funciona, em 3 passos
 
-1. O cliente da caixilharia envia o pedido por email.
-2. O agente devolve um orçamento em PDF, calculado com a tabela de preços da empresa.
-3. A empresa revê o PDF e, se aprovar, envia-o ao cliente.
+1. O pedido do cliente da caixilharia chega por email ou formulário.
+2. O agente calcula o orçamento com a tabela de preços da empresa (por exemplo um Excel).
+3. O PDF sai para a empresa rever e, se aprovar, enviar ao cliente.
+
+## Planos (mensais, sem IVA; acresce IVA à taxa legal)
+
+- Essencial: 300 €/mês — uma tabela de preços e pedidos por email.
+- Profissional: 500 €/mês — várias tabelas (PVC, alumínio, estores); pedidos por email ou formulário.
+- Completo: 800 €/mês — regras mais completas (fornecimento e instalação, opções de IVA) para quem tem mais pedidos no dia a dia.
+
+O plano certo confirma-se por email, depois de se ver a tabela da empresa. Há um piloto gratuito, sem obrigação de contratar.
 
 ## O que o serviço faz
 
 - Setor no lançamento: caixilharia (janelas e portas em PVC ou alumínio, estores, mosquiteiros, remoção e instalação).
-- Canal no lançamento: apenas email e PDF.
+- Canal no lançamento: email, formulário e PDF.
 - WhatsApp, orçamento a partir de fotografias, e AVAC: em breve, ainda não disponíveis.
-- Cálculo determinístico a partir da tabela da empresa; um modelo de linguagem só extrai o pedido, não define preços.
+- Cálculo a partir da tabela da empresa (Excel ou CSV, ou outro ficheiro estruturado a confirmar por email). Um modelo de linguagem só extrai o pedido, não define preços.
 - IVA no orçamento da caixilharia: valores sem IVA e com IVA; 23 % por omissão; opção de 6 % para obras que possam caber nas regras de habitação, a confirmar com o contabilista da empresa.
-- Preço do serviço: a partir de 300 €/mês, sem IVA, com piloto gratuito.
-- Sem chamadas, reuniões ou visitas. Tudo por email.
+- Instalação remota, só por email. Sem chamadas, reuniões ou visitas.
+- Contrato mensal; início e cancelamento confirmados por escrito, por email.
 
 ## O que não fazer
 
@@ -36,3 +44,4 @@ Idioma: português europeu
 - Não inventar telefone, morada, NIF ou outros contactos que não o email acima.
 - Não apresentar WhatsApp, fotografias ou AVAC como canal ou serviço já disponível.
 - Não tratar os valores do PDF de exemplo como preços de uma empresa real.
+- Não inventar testemunhos, logótipos de clientes ou estatísticas.

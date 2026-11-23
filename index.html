@@ -3,17 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Orçamentos de caixilharia em PDF, a partir do email do cliente | Orçamentos Rápidos</title>
-  <meta name="description" content="A Orçamentos Rápidos transforma o email do cliente numa proposta em PDF, com a tabela de preços da caixilharia, para a empresa rever e enviar. Janelas e portas em PVC ou alumínio e estores, no Porto e no Norte. A partir de 300 €/mês, com piloto gratuito.">
+  <title>Orçamentos de caixilharia em PDF, em minutos | Orçamentos Rápidos</title>
+  <meta name="description" content="O pedido do cliente vira um orçamento em PDF, com a vossa tabela de preços. Planos de 300 a 800 €/mês + IVA. Instalação remota, só por email.">
   <link rel="canonical" href="https://orcamentosrapidos.pt/">
   <link rel="stylesheet" href="styles.css">
-  <meta property="og:title" content="Orçamentos de caixilharia em PDF, a partir do email do cliente">
-  <meta property="og:description" content="O cliente envia o pedido por email. O agente devolve um PDF com a tabela da empresa. A empresa revê e envia. A partir de 300 €/mês, com piloto gratuito.">
+  <meta property="og:site_name" content="Orçamentos Rápidos">
+  <meta property="og:title" content="Orçamentos de caixilharia em PDF, em minutos">
+  <meta property="og:description" content="O pedido do cliente chega por email ou formulário. O agente calcula com a vossa tabela de preços e devolve um PDF para reverem. Planos de 300 a 800 €/mês + IVA. Só por email, sem chamadas nem visitas.">
   <meta property="og:url" content="https://orcamentosrapidos.pt/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_PT">
   <meta property="og:image" content="https://orcamentosrapidos.pt/orcamento-exemplo-1.png">
+  <meta property="og:image:alt" content="Primeira página de um orçamento de exemplo em PDF, com dados de demonstração.">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Orçamentos de caixilharia em PDF, em minutos">
+  <meta name="twitter:description" content="O pedido do cliente vira um PDF com a vossa tabela de preços, para a empresa rever. Planos de 300 a 800 €/mês + IVA.">
+  <meta name="twitter:image" content="https://orcamentosrapidos.pt/orcamento-exemplo-1.png">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -38,71 +43,87 @@
         "@type": "Service",
         "@id": "https://orcamentosrapidos.pt/#servico",
         "name": "Agente de orçamentos automáticos para caixilharia",
-        "serviceType": "Orçamentação automática de janelas, portas e estores a partir de email",
+        "serviceType": "Orçamentação automática de janelas, portas e estores a partir de email ou formulário",
         "url": "https://orcamentosrapidos.pt/",
         "provider": { "@id": "https://orcamentosrapidos.pt/#organizacao" },
         "areaServed": { "@type": "AdministrativeArea", "name": "Porto e Norte de Portugal" },
         "audience": { "@type": "BusinessAudience", "name": "Caixilharias de janelas e portas em PVC ou alumínio e estores" },
-        "description": "O cliente da caixilharia envia o pedido por email. O agente devolve um orçamento em PDF calculado com a tabela de preços da empresa. A empresa revê e envia o PDF ao cliente, em nome dela.",
+        "description": "O pedido do cliente da caixilharia chega por email ou formulário. O agente calcula o orçamento com a tabela de preços da empresa e devolve um PDF para a empresa rever e enviar, em nome dela.",
         "offers": {
-          "@type": "Offer",
+          "@type": "AggregateOffer",
           "url": "https://orcamentosrapidos.pt/#preco",
           "priceCurrency": "EUR",
-          "price": "300.00",
-          "priceSpecification": {
-            "@type": "UnitPriceSpecification",
-            "price": "300.00",
-            "priceCurrency": "EUR",
-            "unitCode": "MON",
-            "valueAddedTaxIncluded": false,
-            "description": "A partir de 300 €/mês, sem IVA. Acresce IVA à taxa legal. O piloto é gratuito."
-          },
-          "description": "A partir de 300 €/mês, com piloto gratuito."
+          "lowPrice": "300.00",
+          "highPrice": "800.00",
+          "offerCount": 3,
+          "valueAddedTaxIncluded": false,
+          "description": "Três planos mensais, de 300 a 800 €/mês. Acresce IVA à taxa legal.",
+          "offers": [
+            {
+              "@type": "Offer",
+              "name": "Essencial",
+              "price": "300.00",
+              "priceCurrency": "EUR",
+              "valueAddedTaxIncluded": false,
+              "priceSpecification": { "@type": "UnitPriceSpecification", "price": "300.00", "priceCurrency": "EUR", "unitCode": "MON", "valueAddedTaxIncluded": false }
+            },
+            {
+              "@type": "Offer",
+              "name": "Profissional",
+              "price": "500.00",
+              "priceCurrency": "EUR",
+              "valueAddedTaxIncluded": false,
+              "priceSpecification": { "@type": "UnitPriceSpecification", "price": "500.00", "priceCurrency": "EUR", "unitCode": "MON", "valueAddedTaxIncluded": false }
+            },
+            {
+              "@type": "Offer",
+              "name": "Completo",
+              "price": "800.00",
+              "priceCurrency": "EUR",
+              "valueAddedTaxIncluded": false,
+              "priceSpecification": { "@type": "UnitPriceSpecification", "price": "800.00", "priceCurrency": "EUR", "unitCode": "MON", "valueAddedTaxIncluded": false }
+            }
+          ]
         }
       },
       {
         "@type": "FAQPage",
-        "@id": "https://orcamentosrapidos.pt/#faq",
+        "@id": "https://orcamentosrapidos.pt/#perguntas",
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "O orçamento vai com o nome da Orçamentos Rápidos?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Não. O PDF e o email ao cliente final saem em nome da empresa de caixilharia. A marca Orçamentos Rápidos não aparece no rodapé do orçamento." }
+            "name": "Como tratam os dados e a privacidade (RGPD)?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Tratamos só os dados necessários para responder ao email, instalar o serviço e calcular os orçamentos — tipicamente o nome e o email da empresa, a tabela de preços que nos enviam e o conteúdo dos pedidos. Não vendemos dados. Os direitos de acesso, retificação ou apagamento exercem-se por email, para geral.orcamentosrapidos@gmail.com. Os pormenores estão na política de privacidade." }
           },
           {
             "@type": "Question",
-            "name": "O sistema envia o PDF sozinho ao cliente?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Não. O dono da empresa recebe o PDF por email e só depois de carregar em Aprovar ou Rejeitar é que o orçamento pode seguir para o cliente final." }
+            "name": "Que tabelas de preços são aceites?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Aceitamos a tabela que a empresa já usa no dia a dia, desde que esteja organizada de forma legível: em regra uma folha Excel ou um CSV, com produtos, medidas ou regras, e preços. Não pedimos um formato especial nem um programa novo. Se a tabela estiver noutro ficheiro estruturado, vemos por email se dá para a usar." }
           },
           {
             "@type": "Question",
-            "name": "Os preços incluem IVA?",
-            "acceptedAnswer": { "@type": "Answer", "text": "O serviço da Orçamentos Rápidos é anunciado a partir de 300 €/mês sem IVA; acresce IVA à taxa legal. No PDF de orçamento da caixilharia, os valores aparecem sem IVA e com IVA. Por omissão o orçamento usa 23 %. Pode escolher-se a opção de 6 % quando a obra parecer caber nas regras de habitação; essa escolha é uma proposta e deve ser confirmada com o contabilista da empresa." }
+            "name": "Funciona com uma lista de preços em Excel?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Sim. Uma lista de preços em Excel é o ponto de partida mais comum. Enviam-nos a folha por email; o agente passa a calcular com esses valores, não com um catálogo nosso." }
           },
           {
             "@type": "Question",
-            "name": "Como tratam os dados e a privacidade?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Tratamos só os dados necessários para responder ao email, correr o piloto e prestar o serviço — tipicamente o nome e o email da empresa e o conteúdo dos pedidos que nos enviam. Não vendemos dados. Os direitos de acesso, retificação ou apagamento exercem-se por email, para geral.orcamentosrapidos@gmail.com. Os pormenores estão na política de privacidade." }
+            "name": "Quanto tempo demora a pôr a funcionar?",
+            "acceptedAnswer": { "@type": "Answer", "text": "A instalação é remota e feita só por email, sem chamadas nem visitas. O tempo depende da tabela que nos enviarem e de um pedido de exemplo. Na maior parte dos casos tenta-se deixar o fluxo a funcionar em poucos dias úteis depois de termos esses elementos." }
           },
           {
             "@type": "Question",
-            "name": "É preciso uma reunião ou uma chamada?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Não. Tudo se trata por email. Não há chamadas, reuniões nem visitas." }
+            "name": "Como é o contrato e o cancelamento?",
+            "acceptedAnswer": { "@type": "Answer", "text": "O serviço é mensal. O plano, o início e as condições de cancelamento confirmam-se por escrito, por email, antes de começar. Para cancelar, basta escrever para geral.orcamentosrapidos@gmail.com. Não há chamadas, reuniões nem visitas." }
           },
           {
             "@type": "Question",
-            "name": "De onde vêm os preços do orçamento?",
-            "acceptedAnswer": { "@type": "Answer", "text": "No piloto e no serviço os cálculos usam a tabela de preços da própria empresa. Os valores de demonstração desta página são de um catálogo de exemplo, não de uma empresa real." }
+            "name": "O PDF sai em nome da nossa empresa? O sistema envia sozinho ao cliente?",
+            "acceptedAnswer": { "@type": "Answer", "text": "O PDF sai em nome da empresa de caixilharia. A marca Orçamentos Rápidos não aparece no orçamento. O sistema não envia o PDF sozinho ao cliente final: a empresa recebe-o por email, revê-o e só depois de aprovar é que o orçamento pode seguir." }
           },
           {
             "@type": "Question",
-            "name": "Aceitam pedidos por WhatsApp ou por fotografia?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Ainda não. No lançamento o canal é só email e PDF. WhatsApp e orçamento a partir de fotografias ficam para mais tarde." }
-          },
-          {
-            "@type": "Question",
-            "name": "Quanto custa?",
-            "acceptedAnswer": { "@type": "Answer", "text": "O serviço custa a partir de 300 €/mês, sem IVA, com piloto gratuito. O piloto corre só por email: um vídeo de 60 segundos e uma simulação com um pedido real da empresa." }
+            "name": "É preciso uma chamada, uma reunião ou uma visita?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Não. A instalação e o serviço tratam-se só por email. Não há chamadas, reuniões nem visitas." }
           }
         ]
       }
@@ -116,93 +137,124 @@
     <nav aria-label="Secções desta página">
       <a href="#como-funciona">Como funciona</a>
       <a href="#exemplo">Exemplo</a>
-      <a href="#preco">Preço</a>
-      <a href="#piloto">Piloto</a>
+      <a href="#preco">Planos</a>
       <a href="#perguntas">Perguntas</a>
     </nav>
   </header>
   <main>
-    <h1>Orçamentos de caixilharia em PDF, a partir do email do cliente</h1>
-    <p class="lead">A Orçamentos Rápidos lê o pedido que o vosso cliente envia por email, calcula o valor com a vossa tabela de preços e devolve um PDF para reverem e enviarem — já em nome da vossa empresa, não no nosso.</p>
-    <p>É para caixilharias do Porto e do Norte de Portugal que orçamentam janelas e portas em PVC ou alumínio, e estores.</p>
-    <p>
-      <a class="cta" href="mailto:geral.orcamentosrapidos@gmail.com?subject=Piloto%20gratuito%20de%20or%C3%A7amentos%20de%20caixilharia">Pedir o piloto gratuito por email</a>
-      <a class="cta cta-sec" href="#preco">Ver o preço</a>
-    </p>
-    <p class="nota">Tudo se trata por email. Não há chamadas nem reuniões.</p>
+    <section class="hero" aria-labelledby="titulo-principal">
+      <h1 id="titulo-principal">O pedido do cliente vira um orçamento em PDF, em minutos</h1>
+      <p class="lead">A Orçamentos Rápidos é um agente para caixilharias: lê o pedido que chega por email ou formulário, calcula com a vossa tabela de preços e devolve um PDF para reverem e enviarem — já em nome da vossa empresa, não no nosso.</p>
+      <p>É para empresas do Porto e do Norte de Portugal que orçamentam janelas e portas em PVC ou alumínio, e estores.</p>
+      <p>
+        <a class="cta" href="mailto:geral.orcamentosrapidos@gmail.com?subject=Pedido%20de%20informa%C3%A7%C3%A3o%20%E2%80%94%20Or%C3%A7amentos%20R%C3%A1pidos%20para%20caixilharia">Pedir informações por email</a>
+      </p>
+      <p class="nota">A instalação é remota e tudo se trata por email. Não há chamadas, reuniões nem visitas.</p>
+    </section>
 
     <h2 id="como-funciona">Como funciona, em 3 passos</h2>
     <ol class="passos">
-      <li><strong>O cliente envia o pedido por email.</strong> Escreve a pedir janelas, portas ou estores, com as medidas que tiver.</li>
-      <li><strong>O agente devolve um orçamento em PDF, com a vossa tabela.</strong> Um modelo de linguagem só extrai o pedido; o cálculo é feito com os vossos preços, linhas, IVA e total.</li>
-      <li><strong>A empresa revê e envia ao cliente.</strong> Recebem o PDF por email, aprovam ou rejeitam, e só depois o mesmo PDF pode seguir — em vosso nome.</li>
+      <li><strong>O pedido do cliente chega por email ou formulário.</strong> O cliente pede janelas, portas ou estores, com as medidas e o tipo de vão que tiver indicado.</li>
+      <li><strong>O agente calcula com a vossa tabela de preços.</strong> Usa a lista da empresa — por exemplo um Excel — para linhas, valores, IVA e total. Não inventa preços.</li>
+      <li><strong>O PDF sai para a empresa rever.</strong> Recebem o orçamento por email, aprovam ou corrigem, e só depois o mesmo PDF pode seguir para o cliente — em vosso nome.</li>
     </ol>
-    <p class="breve"><strong>No lançamento o canal é só email e PDF.</strong> WhatsApp e orçamento a partir de fotografias: em breve. O mesmo tipo de fluxo para AVAC está previsto para mais tarde.</p>
+    <p class="breve"><strong>No lançamento o canal é email, formulário e PDF.</strong> WhatsApp e orçamento a partir de fotografias ficam para mais tarde. O mesmo tipo de fluxo para AVAC está previsto mais à frente.</p>
 
     <h2 id="exemplo">Exemplo de orçamento</h2>
-    <p>Abaixo está um <strong>orçamento de exemplo</strong> (não é de uma empresa real). Uma fração na Póvoa de Varzim pede quatro vãos em PVC e uma porta de varanda, com vidro duplo Low-E e árgon, estores de alumínio térmico, mosquiteiro na porta, remoção e instalação. Neste exemplo a empresa escolheu a opção de IVA reduzido sobre a mão de obra; o total com IVA é <strong>3&nbsp;836,76&nbsp;€</strong>.</p>
+    <p>Abaixo está uma <strong>demonstração com dados de exemplo</strong>, não um orçamento de uma empresa real. Uma fração na Póvoa de Varzim pede quatro vãos em PVC e uma porta de varanda, com vidro duplo Low-E e árgon, estores de alumínio térmico, mosquiteiro na porta, remoção e instalação. Neste exemplo a empresa escolheu a opção de IVA reduzido sobre a mão de obra; o total com IVA é <strong>3&nbsp;836,76&nbsp;€</strong>.</p>
     <figure class="preview">
-      <p class="selo">Exemplo</p>
+      <p class="selo">Demonstração · dados de exemplo</p>
       <div class="paginas">
         <a href="orcamento-exemplo.pdf" title="Descarregar o PDF de exemplo, página 1">
-          <img src="orcamento-exemplo-1.png" alt="Página 1 do orçamento de exemplo ORC-EXEMPLO-001, com o nome de uma empresa fictícia e as primeiras linhas. Os preços são de um catálogo de exemplo." width="720" height="1019">
+          <img src="orcamento-exemplo-1.png" alt="Página 1 do orçamento de demonstração ORC-EXEMPLO-001, com o nome de uma empresa fictícia e as primeiras linhas. Os preços são de um catálogo de exemplo." width="720" height="1019">
         </a>
         <a href="orcamento-exemplo.pdf" title="Descarregar o PDF de exemplo, página 2">
-          <img src="orcamento-exemplo-2.png" alt="Página 2 do orçamento de exemplo, com o restante das linhas, os totais sem IVA e com IVA (3 836,76 €) e a nota de IVA." width="720" height="1019" loading="lazy">
+          <img src="orcamento-exemplo-2.png" alt="Página 2 do orçamento de demonstração, com o restante das linhas, os totais sem IVA e com IVA (3 836,76 €) e a nota de IVA." width="720" height="1019" loading="lazy">
         </a>
         <a href="orcamento-exemplo.pdf" title="Descarregar o PDF de exemplo, página 3">
-          <img src="orcamento-exemplo-3.png" alt="Página 3 do orçamento de exemplo, com as condições e a indicação de que o documento é um exemplo." width="720" height="1019" loading="lazy">
+          <img src="orcamento-exemplo-3.png" alt="Página 3 do orçamento de demonstração, com as condições e a indicação de que o documento é um exemplo." width="720" height="1019" loading="lazy">
         </a>
       </div>
-      <figcaption class="nota">Orçamento de exemplo ORC-EXEMPLO-001, em nome de uma empresa fictícia. Os preços vêm de um catálogo de exemplo, não da tabela de nenhuma empresa real. Documento não vinculativo. <a href="orcamento-exemplo.pdf">Descarregar o PDF de exemplo</a> (3 páginas).</figcaption>
+      <figcaption class="nota">Orçamento de demonstração ORC-EXEMPLO-001, em nome de uma empresa fictícia. Os preços vêm de um catálogo de exemplo, não da tabela de nenhuma empresa real. Documento não vinculativo. <a href="orcamento-exemplo.pdf">Descarregar o PDF de exemplo</a> (3 páginas).</figcaption>
     </figure>
 
-    <h2 id="preco">Quanto custa</h2>
-    <div class="preco">
-      <p class="valor">A partir de 300&nbsp;€/mês</p>
-      <p>Preço de partida do serviço, sem IVA (acresce IVA à taxa legal). O piloto é gratuito e não obriga a contratar.</p>
+    <h2 id="preco">Planos e preços</h2>
+    <p>Três planos mensais, de 300 a 800&nbsp;€/mês. Os valores abaixo são <strong>sem IVA</strong>; acresce IVA à taxa legal. A instalação é remota e o serviço trata-se só por email — sem chamadas, reuniões ou visitas. O plano certo confirma-se por email, depois de vermos a vossa tabela.</p>
+    <div class="planos">
+      <article class="plano">
+        <h3>Essencial</h3>
+        <p class="valor">300&nbsp;€<span class="periodo">/mês + IVA</span></p>
+        <p>Para começar com uma tabela de preços e o fluxo básico de pedidos por email.</p>
+        <ul>
+          <li>Uma lista de preços, por exemplo em Excel</li>
+          <li>Pedidos por email</li>
+          <li>PDF para a empresa rever e enviar</li>
+          <li>Instalação remota, só por email</li>
+        </ul>
+      </article>
+      <article class="plano">
+        <h3>Profissional</h3>
+        <p class="valor">500&nbsp;€<span class="periodo">/mês + IVA</span></p>
+        <p>Para quem trabalha com mais do que uma linha — PVC, alumínio e estores.</p>
+        <ul>
+          <li>Várias tabelas de preços (Excel ou CSV)</li>
+          <li>Pedidos por email ou formulário</li>
+          <li>PDF para a empresa rever e enviar</li>
+          <li>Ajustes à tabela tratados por email</li>
+        </ul>
+      </article>
+      <article class="plano">
+        <h3>Completo</h3>
+        <p class="valor">800&nbsp;€<span class="periodo">/mês + IVA</span></p>
+        <p>Para oficinas com mais pedidos no dia a dia e regras mais completas no orçamento.</p>
+        <ul>
+          <li>Tabelas e regras de fornecimento e instalação</li>
+          <li>Pedidos por email ou formulário</li>
+          <li>Opções de IVA no PDF, a confirmar convosco</li>
+          <li>Instalação e acompanhamento só por email</li>
+        </ul>
+      </article>
     </div>
+    <p>
+      <a class="cta" href="mailto:geral.orcamentosrapidos@gmail.com?subject=Pedido%20de%20informa%C3%A7%C3%A3o%20%E2%80%94%20Or%C3%A7amentos%20R%C3%A1pidos%20para%20caixilharia">Escrever a pedir o plano certo</a>
+    </p>
 
     <h2 id="iva">Como aparece o IVA no orçamento</h2>
     <p>No PDF da caixilharia os valores aparecem sem IVA e com IVA. Por omissão usa-se 23&nbsp;%. Se a obra for uma empreitada em habitação e puder caber nas regras da taxa reduzida (por exemplo a verba 2.27 da Lista I do CIVA), a empresa pode escolher a opção de 6&nbsp;% — muitas vezes só sobre a mão de obra. Essa escolha é uma proposta e confirma-se com o contabilista da empresa antes de faturar.</p>
 
-    <h2 id="piloto">O que inclui o piloto gratuito</h2>
-    <p>O piloto não tem custo e corre só por email, sem reuniões nem chamadas. Enviamos um vídeo de 60 segundos a mostrar o fluxo e, com um pedido real vosso (podem ocultar o nome do cliente), devolvemos a simulação do orçamento em PDF para compararem com o que fariam à mão.</p>
-    <p><a class="cta" href="mailto:geral.orcamentosrapidos@gmail.com?subject=Piloto%20gratuito%20de%20or%C3%A7amentos%20de%20caixilharia">Escrever para pedir o piloto</a></p>
+    <h2 id="piloto">Como começar</h2>
+    <p>Podem começar com um piloto gratuito, só por email, sem obrigação de contratar. Enviamos um vídeo curto a mostrar o fluxo e, com um pedido real vosso (podem ocultar o nome do cliente), devolvemos a simulação do orçamento em PDF para compararem com o que fariam à mão.</p>
+    <p><a class="cta" href="mailto:geral.orcamentosrapidos@gmail.com?subject=Piloto%20gratuito%20de%20or%C3%A7amentos%20de%20caixilharia">Pedir o piloto gratuito por email</a></p>
     <p class="nota">Pedro Carvalho | Orçamentos Rápidos · geral.orcamentosrapidos@gmail.com · Porto e Norte de Portugal</p>
 
     <h2 id="perguntas">Perguntas frequentes</h2>
     <details open>
-      <summary>O orçamento vai com o nome da Orçamentos Rápidos?</summary>
-      <p>Não. O PDF e o email ao cliente final saem em nome da empresa de caixilharia. A marca Orçamentos Rápidos não aparece no rodapé do orçamento.</p>
+      <summary>Como tratam os dados e a privacidade (RGPD)?</summary>
+      <p>Tratamos só os dados necessários para responder ao email, instalar o serviço e calcular os orçamentos — tipicamente o nome e o email da empresa, a tabela de preços que nos enviam e o conteúdo dos pedidos. Não vendemos dados. Os direitos de acesso, retificação ou apagamento exercem-se por email, para <a href="mailto:geral.orcamentosrapidos@gmail.com">geral.orcamentosrapidos@gmail.com</a>. Os pormenores estão na <a href="privacidade.html">política de privacidade</a>.</p>
     </details>
     <details>
-      <summary>O sistema envia o PDF sozinho ao cliente?</summary>
-      <p>Não. O dono da empresa recebe o PDF por email e só depois de carregar em Aprovar ou Rejeitar é que o orçamento pode seguir para o cliente final.</p>
+      <summary>Que tabelas de preços são aceites?</summary>
+      <p>Aceitamos a tabela que a empresa já usa no dia a dia, desde que esteja organizada de forma legível: em regra uma folha Excel ou um CSV, com produtos, medidas ou regras, e preços. Não pedimos um formato especial nem um programa novo. Se a tabela estiver noutro ficheiro estruturado, vemos por email se dá para a usar.</p>
     </details>
     <details>
-      <summary>Os preços incluem IVA?</summary>
-      <p>O serviço da Orçamentos Rápidos é anunciado a partir de 300&nbsp;€/mês sem IVA; acresce IVA à taxa legal. No PDF de orçamento da caixilharia, os valores aparecem sem IVA e com IVA. Por omissão o orçamento usa 23&nbsp;%. Pode escolher-se a opção de 6&nbsp;% quando a obra parecer caber nas regras de habitação; essa escolha é uma proposta e deve ser confirmada com o contabilista da empresa.</p>
+      <summary>Funciona com uma lista de preços em Excel?</summary>
+      <p>Sim. Uma lista de preços em Excel é o ponto de partida mais comum. Enviam-nos a folha por email; o agente passa a calcular com esses valores, não com um catálogo nosso.</p>
     </details>
     <details>
-      <summary>Como tratam os dados e a privacidade?</summary>
-      <p>Tratamos só os dados necessários para responder ao email, correr o piloto e prestar o serviço — tipicamente o nome e o email da empresa e o conteúdo dos pedidos que nos enviam. Não vendemos dados. Os direitos de acesso, retificação ou apagamento exercem-se por email, para <a href="mailto:geral.orcamentosrapidos@gmail.com">geral.orcamentosrapidos@gmail.com</a>. Os pormenores estão na <a href="privacidade.html">política de privacidade</a>.</p>
+      <summary>Quanto tempo demora a pôr a funcionar?</summary>
+      <p>A instalação é remota e feita só por email, sem chamadas nem visitas. O tempo depende da tabela que nos enviarem e de um pedido de exemplo. Na maior parte dos casos tenta-se deixar o fluxo a funcionar em poucos dias úteis depois de termos esses elementos.</p>
     </details>
     <details>
-      <summary>É preciso uma reunião ou uma chamada?</summary>
-      <p>Não. Tudo se trata por email. Não há chamadas, reuniões nem visitas.</p>
+      <summary>Como é o contrato e o cancelamento?</summary>
+      <p>O serviço é mensal. O plano, o início e as condições de cancelamento confirmam-se por escrito, por email, antes de começar. Para cancelar, basta escrever para <a href="mailto:geral.orcamentosrapidos@gmail.com">geral.orcamentosrapidos@gmail.com</a>. Não há chamadas, reuniões nem visitas.</p>
     </details>
     <details>
-      <summary>De onde vêm os preços do orçamento?</summary>
-      <p>No piloto e no serviço os cálculos usam a tabela de preços da própria empresa. Os valores de demonstração desta página são de um catálogo de exemplo, não de uma empresa real.</p>
+      <summary>O PDF sai em nome da nossa empresa? O sistema envia sozinho ao cliente?</summary>
+      <p>O PDF sai em nome da empresa de caixilharia. A marca Orçamentos Rápidos não aparece no orçamento. O sistema não envia o PDF sozinho ao cliente final: a empresa recebe-o por email, revê-o e só depois de aprovar é que o orçamento pode seguir.</p>
     </details>
     <details>
-      <summary>Aceitam pedidos por WhatsApp ou por fotografia?</summary>
-      <p>Ainda não. No lançamento o canal é só email e PDF. WhatsApp e orçamento a partir de fotografias ficam para mais tarde.</p>
-    </details>
-    <details>
-      <summary>Quanto custa?</summary>
-      <p>O serviço custa a partir de 300&nbsp;€/mês, sem IVA, com piloto gratuito. O piloto corre só por email: um vídeo de 60 segundos e uma simulação com um pedido real da empresa.</p>
+      <summary>É preciso uma chamada, uma reunião ou uma visita?</summary>
+      <p>Não. A instalação e o serviço tratam-se só por email. Não há chamadas, reuniões nem visitas.</p>
     </details>
   </main>
   <footer>
