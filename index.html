@@ -9,7 +9,7 @@
   <link rel="preload" href="fonts/source-sans-3-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
-  <meta name="theme-color" content="#F4EDE2">
+  <meta name="theme-color" content="#16191F">
   <meta property="og:site_name" content="Orçamentos Rápidos">
   <meta property="og:title" content="Faça um orçamento de caixilharia em 30 segundos">
   <meta property="og:description" content="Experimente no site um orçamento de caixilharia em 30 segundos, com preços de exemplo. Um mês grátis; planos de 49 a 199 €/mês + IVA.">
@@ -220,44 +220,65 @@
         </div>
         <div class="ilustracao">
         <svg viewBox="0 0 300 390" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ilust-titulo">
-          <title id="ilust-titulo">Desenho de uma janela de duas folhas, com estores laterais e um vaso no peitoril</title>
-          <ellipse cx="150" cy="372" rx="108" ry="11" fill="#2C241C" opacity="0.1"/>
+          <title id="ilust-titulo">Desenho de uma janela de alumínio de duas folhas, com estores laterais e reflexo no vidro</title>
+          <defs>
+            <linearGradient id="alu-frame" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#EEF2F6"/>
+              <stop offset="0.45" stop-color="#A8B2BE"/>
+              <stop offset="1" stop-color="#D5DCE4"/>
+            </linearGradient>
+            <linearGradient id="alu-side" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#D8DEE6"/>
+              <stop offset="0.5" stop-color="#8E99A6"/>
+              <stop offset="1" stop-color="#C5CDD6"/>
+            </linearGradient>
+            <linearGradient id="glass-pane" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#D7EEF2"/>
+              <stop offset="0.45" stop-color="#8BB8C4"/>
+              <stop offset="1" stop-color="#5E8A9A"/>
+            </linearGradient>
+            <linearGradient id="shutter" x1="0" y1="0" x2="1" y2="0">
+              <stop offset="0" stop-color="#C9D2DB"/>
+              <stop offset="0.5" stop-color="#7E8894"/>
+              <stop offset="1" stop-color="#B4BEC8"/>
+            </linearGradient>
+          </defs>
+          <ellipse cx="150" cy="372" rx="108" ry="11" fill="#000" opacity="0.28"/>
           <g transform="translate(10,50) rotate(-7 29 120)">
-            <rect x="0" y="0" width="58" height="244" rx="4" fill="#B04A2E"/>
-            <g stroke="#8F3C25" stroke-width="3.5" stroke-linecap="round">
+            <rect x="0" y="0" width="58" height="244" rx="4" fill="url(#shutter)"/>
+            <g stroke="#5C656F" stroke-width="3.5" stroke-linecap="round" opacity="0.7">
               <path d="M9 22h40M9 52h40M9 82h40M9 112h40M9 142h40M9 172h40M9 202h40M9 226h40"/>
             </g>
           </g>
           <g transform="translate(232,54) rotate(6 29 120)">
-            <rect x="0" y="0" width="58" height="244" rx="4" fill="#B04A2E"/>
-            <g stroke="#8F3C25" stroke-width="3.5" stroke-linecap="round">
+            <rect x="0" y="0" width="58" height="244" rx="4" fill="url(#shutter)"/>
+            <g stroke="#5C656F" stroke-width="3.5" stroke-linecap="round" opacity="0.7">
               <path d="M9 22h40M9 52h40M9 82h40M9 112h40M9 142h40M9 172h40M9 202h40M9 226h40"/>
             </g>
           </g>
-          <rect x="72" y="36" width="156" height="270" rx="5" fill="#2F4A3C"/>
-          <rect x="84" y="50" width="132" height="240" fill="#E7EEE8"/>
-          <rect x="146" y="50" width="8" height="240" fill="#2F4A3C"/>
-          <rect x="84" y="166" width="132" height="8" fill="#2F4A3C"/>
-          <rect x="90" y="56" width="52" height="104" rx="1" fill="#F4F8F4" opacity="0.7"/>
-          <rect x="158" y="56" width="52" height="104" rx="1" fill="#F4F8F4" opacity="0.7"/>
-          <rect x="90" y="180" width="52" height="104" rx="1" fill="#F4F8F4" opacity="0.45"/>
-          <rect x="158" y="180" width="52" height="104" rx="1" fill="#F4F8F4" opacity="0.45"/>
-          <rect x="62" y="302" width="176" height="13" rx="2" fill="#2F4A3C"/>
-          <rect x="56" y="313" width="188" height="8" rx="2" fill="#24382D"/>
-          <path d="M196 314l4 34h18l4-34z" fill="#B04A2E"/>
-          <ellipse cx="209" cy="314" rx="14" ry="5" fill="#8F3C25"/>
-          <path d="M209 314c-8-14-20-18-14-32 6 10 10 12 14 32z" fill="#2F4A3C"/>
-          <path d="M209 314c8-12 18-16 16-30-8 9-12 12-16 30z" fill="#3D5A45"/>
-          <path d="M209 308c0-16 4-24 0-34-2 10-2 18 0 34z" fill="#2F4A3C"/>
+          <rect x="72" y="36" width="156" height="270" rx="5" fill="url(#alu-frame)"/>
+          <rect x="84" y="50" width="132" height="240" fill="url(#glass-pane)"/>
+          <rect x="146" y="50" width="8" height="240" fill="url(#alu-side)"/>
+          <rect x="84" y="166" width="132" height="8" fill="url(#alu-side)"/>
+          <path d="M90 56l28 0 24 40-18 64-34-20z" fill="#F7FBFC" opacity="0.38"/>
+          <path d="M158 56l28 0 20 36-12 50-36-16z" fill="#F7FBFC" opacity="0.28"/>
+          <path d="M96 186l20 0 16 28-10 48-26-14z" fill="#F7FBFC" opacity="0.18"/>
+          <rect x="62" y="302" width="176" height="13" rx="2" fill="url(#alu-frame)"/>
+          <rect x="56" y="313" width="188" height="8" rx="2" fill="#6B7580"/>
+          <path d="M196 314l4 34h18l4-34z" fill="#7A868F"/>
+          <ellipse cx="209" cy="314" rx="14" ry="5" fill="#5C656F"/>
+          <path d="M209 314c-8-14-20-18-14-32 6 10 10 12 14 32z" fill="#5F8F8A"/>
+          <path d="M209 314c8-12 18-16 16-30-8 9-12 12-16 30z" fill="#8ED4CF"/>
+          <path d="M209 308c0-16 4-24 0-34-2 10-2 18 0 34z" fill="#6BA8A3"/>
         </svg>
       </div>
       </div>
     </section>
 
     <div class="divisor" aria-hidden="true">
-      <svg viewBox="0 0 32 32"><rect x="3.5" y="2.5" width="25" height="27" rx="2" fill="currentColor"/><rect x="6.5" y="5.5" width="8" height="10" fill="#F4EDE2"/><rect x="17.5" y="5.5" width="8" height="10" fill="#F4EDE2"/><rect x="6.5" y="17.5" width="8" height="9" fill="#F4EDE2"/><rect x="17.5" y="17.5" width="8" height="9" fill="#F4EDE2"/></svg>
-      <svg viewBox="0 0 32 32"><rect x="3.5" y="2.5" width="25" height="27" rx="2" fill="currentColor"/><rect x="6.5" y="5.5" width="8" height="10" fill="#F4EDE2"/><rect x="17.5" y="5.5" width="8" height="10" fill="#F4EDE2"/><rect x="6.5" y="17.5" width="8" height="9" fill="#F4EDE2"/><rect x="17.5" y="17.5" width="8" height="9" fill="#F4EDE2"/></svg>
-      <svg viewBox="0 0 32 32"><rect x="3.5" y="2.5" width="25" height="27" rx="2" fill="currentColor"/><rect x="6.5" y="5.5" width="8" height="10" fill="#F4EDE2"/><rect x="17.5" y="5.5" width="8" height="10" fill="#F4EDE2"/><rect x="6.5" y="17.5" width="8" height="9" fill="#F4EDE2"/><rect x="17.5" y="17.5" width="8" height="9" fill="#F4EDE2"/></svg>
+      <svg viewBox="0 0 32 32"><rect x="3.5" y="2.5" width="25" height="27" rx="2" fill="currentColor"/><rect x="6.5" y="5.5" width="8" height="10" fill="#C5DEE4"/><rect x="17.5" y="5.5" width="8" height="10" fill="#C5DEE4"/><rect x="6.5" y="17.5" width="8" height="9" fill="#C5DEE4"/><rect x="17.5" y="17.5" width="8" height="9" fill="#C5DEE4"/></svg>
+      <svg viewBox="0 0 32 32"><rect x="3.5" y="2.5" width="25" height="27" rx="2" fill="currentColor"/><rect x="6.5" y="5.5" width="8" height="10" fill="#C5DEE4"/><rect x="17.5" y="5.5" width="8" height="10" fill="#C5DEE4"/><rect x="6.5" y="17.5" width="8" height="9" fill="#C5DEE4"/><rect x="17.5" y="17.5" width="8" height="9" fill="#C5DEE4"/></svg>
+      <svg viewBox="0 0 32 32"><rect x="3.5" y="2.5" width="25" height="27" rx="2" fill="currentColor"/><rect x="6.5" y="5.5" width="8" height="10" fill="#C5DEE4"/><rect x="17.5" y="5.5" width="8" height="10" fill="#C5DEE4"/><rect x="6.5" y="17.5" width="8" height="9" fill="#C5DEE4"/><rect x="17.5" y="17.5" width="8" height="9" fill="#C5DEE4"/></svg>
     </div>
 
     <section class="seccao" aria-labelledby="o-que-e">

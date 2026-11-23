@@ -1,7 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
-  <rect x="3.5" y="2.5" width="25" height="27" rx="2" fill="#2F4A3C"/>
-  <rect x="6.5" y="5.5" width="8" height="10" fill="#F4EDE2"/>
-  <rect x="17.5" y="5.5" width="8" height="10" fill="#F4EDE2"/>
-  <rect x="6.5" y="17.5" width="8" height="9" fill="#F4EDE2"/>
-  <rect x="17.5" y="17.5" width="8" height="9" fill="#F4EDE2"/>
+  <defs>
+    <linearGradient id="mf" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#EEF2F6"/>
+      <stop offset="0.5" stop-color="#9AA3AE"/>
+      <stop offset="1" stop-color="#C9D0D7"/>
+    </linearGradient>
+  </defs>
+  <rect x="3.5" y="2.5" width="25" height="27" rx="2" fill="url(#mf)"/>
+  <rect x="6.5" y="5.5" width="8" height="10" fill="#C5DEE4"/>
+  <rect x="17.5" y="5.5" width="8" height="10" fill="#C5DEE4"/>
+  <rect x="6.5" y="17.5" width="8" height="9" fill="#A9CDD6"/>
+  <rect x="17.5" y="17.5" width="8" height="9" fill="#A9CDD6"/>
 </svg>
