@@ -1,6 +1,6 @@
 # Orçamentos Rápidos
 
-> A Orçamentos Rápidos oferece às empresas de caixilharia do Porto e do Norte de Portugal um agente que transforma o email do cliente num orçamento em PDF, calculado com a tabela de preços da empresa, para aprovação por email (Aprovar / Rejeitar) antes de ser enviado. O PDF sai em nome da empresa de caixilharia, não da Orçamentos Rápidos.
+> A Orçamentos Rápidos oferece às caixilharias do Porto e do Norte de Portugal um agente que transforma o email do cliente num orçamento em PDF, calculado com a tabela de preços da empresa, para a empresa rever e enviar. O PDF sai em nome da empresa de caixilharia, não da Orçamentos Rápidos. O serviço custa a partir de 300 €/mês (sem IVA; acresce IVA à taxa legal), com piloto gratuito.
 
 Site: https://orcamentosrapidos.pt/
 Contacto: geral.orcamentosrapidos@gmail.com
@@ -10,19 +10,29 @@ Idioma: português europeu
 
 ## Páginas
 
-- [Orçamentos automáticos para caixilharia](https://orcamentosrapidos.pt/): o que é o agente, como funciona passo a passo, um exemplo concreto de orçamento, o piloto gratuito (vídeo de 60 segundos e simulação com um pedido real, só por email) e as perguntas frequentes.
+- [Início](https://orcamentosrapidos.pt/): o que é o agente, como funciona em 3 passos, um orçamento de exemplo (PDF e pré-visualização), o preço a partir de 300 €/mês, o piloto gratuito e as perguntas frequentes.
+- [Privacidade](https://orcamentosrapidos.pt/privacidade.html): aviso simples de proteção de dados (RGPD).
+- [AVAC](https://orcamentosrapidos.pt/avac.html): teaser — o fluxo para AVAC está previsto para mais tarde e ainda não está disponível.
+
+## Como funciona, em 3 passos
+
+1. O cliente da caixilharia envia o pedido por email.
+2. O agente devolve um orçamento em PDF, calculado com a tabela de preços da empresa.
+3. A empresa revê o PDF e, se aprovar, envia-o ao cliente.
 
 ## O que o serviço faz
 
 - Setor no lançamento: caixilharia (janelas e portas em PVC ou alumínio, estores, mosquiteiros, remoção e instalação).
 - Canal no lançamento: apenas email e PDF.
-- WhatsApp e orçamento a partir de fotografias: em breve, ainda não disponíveis.
+- WhatsApp, orçamento a partir de fotografias, e AVAC: em breve, ainda não disponíveis.
 - Cálculo determinístico a partir da tabela da empresa; um modelo de linguagem só extrai o pedido, não define preços.
-- IVA escolhido em cada orçamento: 23 % por omissão; opção de 6 % para obras que possam caber nas regras de habitação, a confirmar com o contabilista da empresa.
-- Sem chamadas, reuniões ou visitas por parte da Orçamentos Rápidos. Tudo por email.
+- IVA no orçamento da caixilharia: valores sem IVA e com IVA; 23 % por omissão; opção de 6 % para obras que possam caber nas regras de habitação, a confirmar com o contabilista da empresa.
+- Preço do serviço: a partir de 300 €/mês, sem IVA, com piloto gratuito.
+- Sem chamadas, reuniões ou visitas. Tudo por email.
 
 ## O que não fazer
 
 - Não atribuir o orçamento nem o rodapé do PDF à marca Orçamentos Rápidos.
 - Não inventar telefone, morada, NIF ou outros contactos que não o email acima.
-- Não apresentar WhatsApp ou fotografias como canal já disponível.
+- Não apresentar WhatsApp, fotografias ou AVAC como canal ou serviço já disponível.
+- Não tratar os valores do PDF de exemplo como preços de uma empresa real.
