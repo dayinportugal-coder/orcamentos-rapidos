@@ -377,14 +377,13 @@ footer nav { margin-top: 0.55rem; }
 
 .simulador { padding: 1.1rem 1rem 1.25rem; }
 .aviso-exemplo {
-  margin: 0 0 1rem;
-  padding: 0.65rem 0.8rem;
-  background: rgba(16, 28, 32, 0.45);
-  color: #F0F5F6;
-  border: 1px solid rgba(142, 212, 207, 0.35);
-  border-radius: 0.7rem;
-  font-weight: 600;
-  font-size: 0.98rem;
+  margin: 0.7rem 0 0;
+  padding: 0;
+  background: none;
+  border: 0;
+  color: var(--muted);
+  font-weight: 500;
+  font-size: 0.88rem;
   max-width: none;
 }
 .simulador-erro {
@@ -610,4 +609,56 @@ footer nav { margin-top: 0.55rem; }
   .folha-totais { margin-top: 1rem; }
   .folha-totais div { display: flex; justify-content: space-between; max-width: 20rem; margin-left: auto; }
   .folha-nota { margin-top: 1.2rem; font-size: 9.5pt; color: #333; }
+}
+
+.seccao-compacta { padding-top: 1.6rem; }
+.seccao-compacta .passos { margin-top: 1rem; margin-bottom: 0.4rem; gap: 1.1rem; }
+
+.barra-total { display: none; }
+@media (max-width: 40rem) {
+  .barra-total {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.7rem 1rem calc(0.7rem + env(safe-area-inset-bottom, 0px));
+    background: rgba(22, 25, 31, 0.92);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-top: 1px solid var(--glass-border);
+    box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.35);
+  }
+  .barra-total[hidden] { display: none !important; }
+  body { padding-bottom: 5.4rem; }
+  footer { padding-bottom: 6.2rem; }
+  .simulador { padding-bottom: 1.6rem; }
+  .barra-total-valor {
+    margin: 0;
+    font-size: 0.92rem;
+    color: #E8EDF2;
+    max-width: none;
+  }
+  .barra-total-valor strong {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 1.18rem;
+    font-weight: 600;
+    color: #F2F5F8;
+  }
+  .barra-pdf {
+    width: auto;
+    margin: 0;
+    padding: 0.6rem 1.15rem;
+    font-size: 0.98rem;
+    flex-shrink: 0;
+  }
+}
+@media print {
+  .barra-total { display: none !important; }
+  body { padding-bottom: 0 !important; }
 }

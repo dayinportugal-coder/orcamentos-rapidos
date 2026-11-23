@@ -565,7 +565,7 @@ function calcular(pedido, catalogo) {
       nome: "Caixilharia Exemplo, Lda.",
       email: "orcamentos@caixilharia-exemplo.pt",
       website: "https://www.caixilharia-exemplo.pt",
-      area_servico: "Porto e Norte de Portugal",
+      area_servico: "Portugal",
     },
     avisos,
     linhas: linhasPublicas,

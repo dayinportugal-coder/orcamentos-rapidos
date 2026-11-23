@@ -146,7 +146,7 @@
       empresa: {
         nome: "Demonstração — Orçamentos Rápidos",
         email: "geral.orcamentosrapidos@gmail.com",
-        area_servico: "Porto e Norte de Portugal"
+        area_servico: "Portugal"
       }
     };
   }
@@ -224,6 +224,7 @@
       if (!orc) {
         resultado.innerHTML = "";
         if (folha) folha.innerHTML = "";
+        atualizarBarra(null);
         return;
       }
       var linhasHtml = orc.linhas.map(function (l) {
@@ -247,7 +248,9 @@
         "<div><dt>Subtotal s/IVA</dt><dd>" + euro(orc.totais.subtotal_s_iva) + "</dd></div>" +
         "<div><dt>IVA 23%</dt><dd>" + euro(orc.totais.iva_total) + "</dd></div>" +
         "<div class=\"total\"><dt>Total c/IVA</dt><dd>" + euro(orc.totais.total_c_iva) + "</dd></div>" +
-        "</dl>";
+        "</dl>" +
+        "<p class=\"aviso-exemplo\">Preços de exemplo — com a sua tabela, o orçamento sai com os seus preços e o seu logótipo.</p>";
+      atualizarBarra(orc);
       preencherFolha(orc);
     }
 
@@ -320,14 +323,30 @@
       form.largura.focus();
     });
 
-    document.getElementById("btn-pdf").addEventListener("click", function () {
+    function imprimir() {
       render();
       document.body.classList.add("a-imprimir");
       window.print();
-    });
+    }
+    document.getElementById("btn-pdf").addEventListener("click", imprimir);
+    var btnBarra = document.getElementById("btn-pdf-barra");
+    if (btnBarra) btnBarra.addEventListener("click", imprimir);
     window.addEventListener("afterprint", function () {
       document.body.classList.remove("a-imprimir");
     });
+
+    function atualizarBarra(orc) {
+      var barra = document.getElementById("barra-total");
+      var valor = document.getElementById("barra-valor");
+      if (!barra || !valor) return;
+      if (!orc) {
+        valor.textContent = "—";
+        barra.hidden = true;
+        return;
+      }
+      valor.textContent = euro(orc.totais.total_c_iva);
+      barra.hidden = false;
+    }
 
     escreverForm(form, vaos[0]);
     render();

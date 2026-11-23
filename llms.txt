@@ -1,16 +1,16 @@
 # Orçamentos Rápidos
 
-> A Orçamentos Rápidos oferece às caixilharias do Porto e do Norte de Portugal um agente que calcula um orçamento de caixilharia no próprio site (e a partir de email ou formulário), com a tabela de preços da empresa, e devolve um PDF para a empresa rever e enviar. No site há um simulador com preços de exemplo; com a tabela da empresa, o PDF sai com os preços e o logótipo dela. Há um mês grátis para começar (durante o piloto pedimos o que melhorariam: cada sugestão útil = +1 dia grátis) e três planos mensais, de 49 a 199 €/mês (sem IVA; acresce IVA à taxa legal). A instalação é remota e o cálculo no site não precisa de servidor.
+> A Orçamentos Rápidos oferece às caixilharias em Portugal um agente que calcula um orçamento de caixilharia no próprio site (e a partir de email ou formulário), com a tabela de preços da empresa, e devolve um PDF para a empresa rever e enviar. No site há um simulador com preços de exemplo; com a tabela da empresa, o PDF sai com os preços e o logótipo dela. Há um mês grátis para começar (durante o piloto pedimos o que melhorariam: cada sugestão útil = +1 dia grátis) e três planos mensais, de 49 a 199 €/mês (sem IVA; acresce IVA à taxa legal). A instalação é remota e o cálculo no site não precisa de servidor.
 
 Site: https://orcamentosrapidos.pt/
 Contacto: geral.orcamentosrapidos@gmail.com
-Área de serviço: Porto e Norte de Portugal
+Área de serviço: Portugal
 Responsável: Pedro Carvalho
 Idioma: português europeu
 
 ## Páginas
 
-- [Início](https://orcamentosrapidos.pt/): simulador de orçamento no topo (cálculo no browser, com preços de exemplo), como funciona no dia a dia, um orçamento de demonstração, os planos, o piloto e as perguntas frequentes.
+- [Início](https://orcamentosrapidos.pt/): simulador de orçamento no topo (cálculo no browser, com preços de exemplo), como funciona, os planos, e quatro perguntas frequentes (mês grátis, dados/RGPD, tabela em Excel, contrato/cancelamento).
 - [Privacidade](https://orcamentosrapidos.pt/privacidade.html): aviso simples de proteção de dados (RGPD).
 - [AVAC](https://orcamentosrapidos.pt/avac.html): teaser — o fluxo para AVAC está previsto para mais tarde e ainda não está disponível.
 
