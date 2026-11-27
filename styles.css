@@ -62,6 +62,36 @@ body {
   min-height: 100%;
 }
 
+.skip-link {
+  position: absolute;
+  left: 0.75rem;
+  top: 0.5rem;
+  z-index: 100;
+  padding: 0.5rem 0.9rem;
+  background: #F2F5F8;
+  color: #16191F;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 0.4rem;
+  transform: translateY(-170%);
+}
+.skip-link:focus,
+.skip-link:focus-visible {
+  transform: none;
+  color: #16191D;
+  outline: 2px solid var(--cyan);
+  outline-offset: 3px;
+}
+:focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 3px;
+}
+button.cta {
+  font: inherit;
+  cursor: pointer;
+}
+
+
 /* Thin metallic edge */
 body::before {
   content: "";
@@ -186,6 +216,29 @@ a:hover, a:focus { color: #B7EBE6; }
 .cta:hover, .cta:focus {
   background: linear-gradient(180deg, #F4F7FA 0%, #C5CDD6 46%, #8E98A4 52%, #D5DCE3 100%);
   color: #15181D;
+}
+
+.convite-tabela {
+  margin: 1.15rem 0 0;
+  padding: 1.05rem 1.15rem 1.2rem;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius);
+  box-shadow: var(--glass-glow);
+  backdrop-filter: blur(20px) saturate(1.15);
+  -webkit-backdrop-filter: blur(20px) saturate(1.15);
+}
+.convite-tabela > p { margin: 0; max-width: none; }
+.convite-tabela .cta { margin-top: 0.8rem; }
+.convite-tabela .nota { margin-top: 0.75rem; }
+.preview-simples {
+  margin-top: 1.6rem;
+  max-width: 22rem;
+}
+.preview-simples figcaption {
+  color: var(--muted);
+  font-size: 0.95rem;
+  max-width: none;
 }
 
 .hero {
@@ -465,6 +518,12 @@ footer nav { margin-top: 0.55rem; }
   background: var(--input-bg);
   appearance: auto;
 }
+.form-vao select:focus-visible,
+.form-vao input[type="number"]:focus-visible,
+.form-vao input[type="checkbox"]:focus-visible {
+  outline: 2px solid #2A6F6C;
+  outline-offset: 2px;
+}
 .form-vao input[type="checkbox"] {
   width: 1.25rem;
   height: 1.25rem;
@@ -563,7 +622,7 @@ footer nav { margin-top: 0.55rem; }
 .folha-orcamento { display: none; }
 @media print {
   body::before, body::after, header, footer, nav, .divisor, .seccao, .hero-intro, .ilustracao,
-  .acoes-vao, .acoes-pdf, .cta, .btn-sec, .nota, .para-quem, noscript { display: none !important; }
+  .acoes-vao, .acoes-pdf, .cta, .btn-sec, .nota, .para-quem, .convite-tabela, .preview-simples, noscript { display: none !important; }
   body, html { background: #fff !important; color: #111 !important; }
   body::after { animation: none !important; }
   body.a-imprimir .hero-min, body.a-imprimir .hero-corpo, body.a-imprimir .simulador {
