@@ -9,7 +9,7 @@
     "moeda": "EUR",
     "precos_incluem_iva": false,
     "data_pesquisa": "2026-11-22",
-    "base_deslocacao": "Póvoa de Varzim (exemplo; a empresa piloto altera a sede e as zonas)"
+    "base_deslocacao": "Braga (exemplo; a empresa piloto altera a sede e as zonas)"
   },
   "regras": {
     "area_minima_m2_por_vao": 0.6,
@@ -321,21 +321,21 @@
   "deslocacao": [
     {
       "codigo": "A",
-      "nome": "Zona A — Póvoa de Varzim e Vila do Conde",
+      "nome": "Zona A — Braga e arredores",
       "preco_eur": 0.0,
       "km_indicativos": "0–15",
       "notas": "Incluída no orçamento."
     },
     {
       "codigo": "B",
-      "nome": "Zona B — até cerca de 25 km (Esposende, Trofa, Mindelo, Rates…)",
+      "nome": "Zona B — até cerca de 25 km (Barcelos, Guimarães, Vila Verde, Amares…)",
       "preco_eur": 30.0,
       "km_indicativos": "15–25",
       "notas": "Valor fixo por visita de instalação (ida e volta)."
     },
     {
       "codigo": "C",
-      "nome": "Zona C — 25 a 50 km (Porto, Matosinhos, Maia, Braga, Famalicão…)",
+      "nome": "Zona C — 25 a 50 km (Viana do Castelo, Ponte de Lima, Fafe, Felgueiras…)",
       "preco_eur": 55.0,
       "km_indicativos": "25–50",
       "notas": ""
