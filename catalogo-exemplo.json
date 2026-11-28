@@ -5,7 +5,7 @@
     "moeda": "EUR",
     "precos_incluem_iva": false,
     "data_pesquisa": "2026-11-22",
-    "base_deslocacao": "Braga (exemplo; a empresa piloto altera a sede e as zonas)"
+    "base_deslocacao": "Porto (exemplo; a empresa piloto altera a sede e as zonas)"
   },
   "regras": {
     "area_minima_m2_por_vao": 0.6,
@@ -317,21 +317,21 @@
   "deslocacao": [
     {
       "codigo": "A",
-      "nome": "Zona A — Braga e arredores",
+      "nome": "Zona A — Porto e arredores",
       "preco_eur": 0.0,
       "km_indicativos": "0–15",
       "notas": "Incluída no orçamento."
     },
     {
       "codigo": "B",
-      "nome": "Zona B — até cerca de 25 km (Barcelos, Guimarães, Vila Verde, Amares…)",
+      "nome": "Zona B — até cerca de 25 km (Matosinhos, Maia, Gaia, Gondomar, Valongo…)",
       "preco_eur": 30.0,
       "km_indicativos": "15–25",
       "notas": "Valor fixo por visita de instalação (ida e volta)."
     },
     {
       "codigo": "C",
-      "nome": "Zona C — 25 a 50 km (Viana do Castelo, Ponte de Lima, Fafe, Felgueiras…)",
+      "nome": "Zona C — 25 a 50 km (Santo Tirso, Paredes, Penafiel, Espinho, Santa Maria da Feira…)",
       "preco_eur": 55.0,
       "km_indicativos": "25–50",
       "notas": ""
